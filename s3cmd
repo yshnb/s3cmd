@@ -6,6 +6,8 @@
 ## License: GPL Version 2
 
 import sys
+reload(sys)
+sys.setdefaultencoding('UTF-8')
 
 if float("%d.%d" %(sys.version_info[0], sys.version_info[1])) < 2.4:
     sys.stderr.write("ERROR: Python 2.4 or higher required, sorry.\n")
